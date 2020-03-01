@@ -14,3 +14,19 @@
 2.  **[git add README.md]**
     **[git commit -m "README.md 추가"]**
     **[git log]** git을 커밋했는지 안 했는지 확인
+
+    전체 파일을 추가하고 싶으면 **[git add .]**
+    **[git commit -m "메인 페이지 생성"]**
+
+    -   커밋은 의미있는 변동사항을 묶어서 만든다.
+        예를 들어 버튼 클릭 버그를 고치는데 5가지 파일을 수정했다면 그 5가지를 묶어 하나의 커밋으로 만든다.(그래야지 동료개발자가 버튼 클릭 버그를 고치는데 어떤 파일을 수정하였는지 손쉽게 파악 가능)
+
+3.  github 사이트에서 프로젝트 저장소 만들기
+
+4) 내 컴퓨터 프로젝트 폴더에 github 저장소 주소 알려주기
+   **[git remote add origin https://github.com/hyekyeong123/gitmaster_study.git]**
+
+5. 내 컴퓨터에 만들었던 덩어리 github에 올리기
+   로컬저장소 -> 원격 저장소
+   **[git push origin master]]**
+   origin은 remote 이름//master은 브린치 이름
