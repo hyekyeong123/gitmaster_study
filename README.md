@@ -11,4 +11,6 @@
     **[pwd]** 현재 폴더 위치 확인
     **[ls]** 현재 하위 폴더들 확인
 
-2.
+2.  **[git add README.md]**
+    **[git commit -m "README.md 추가"]**
+    **[git log]** git을 커밋했는지 안 했는지 확인
