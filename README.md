@@ -26,7 +26,33 @@
 4) 내 컴퓨터 프로젝트 폴더에 github 저장소 주소 알려주기
    **[git remote add origin https://github.com/hyekyeong123/gitmaster_study.git]**
 
+    원격 저장소 연결을 제거할때에는 git remote remove [저장소 이름] 을 사용
+
 5. 내 컴퓨터에 만들었던 덩어리 github에 올리기
    로컬저장소 -> 원격 저장소
    **[git push origin master]]**
    origin은 remote 이름//master은 브린치 이름
+
+    **failed to push some refs to** 이러한 오류가 뜸
+    그래서 **[git pull, git push -f origin master]**을 하였음(커밋 이력을 강제로 덮어 씌우는 것)
+
+---
+
+6. 다른 사람이 만든 것을 가져오기
+   6-1. 원격 저장소를 내 컴퓨터에 받아오기(clone)
+   클론을 하면 원격 저장소의 코드를 내 컴퓨터에 받아올 수 있음.
+   로컬저장소(.git 폴더)도 자동으로 생김
+   **[git clone https://github.com/hyekyeong123/gitmaster_study.git .]**
+   //저 명령어를 그대로 쓰니 폴더까지 복사해버림
+   //일단 삭제 후 뒤에 .을 붙여서 복사
+
+
+    6-2. 업데이트 된 데이터가져오기(pull)
+    **[git pull origin master]**
+
+    6-3. 다른 사용자도 커밋을 만들어서 원격 저장소로 push 할 수 있음
+    몰론 원격 저장소에 푸시 권한이 있을 경우
+
+    복싱 사이트 짱
+    ## 기능 목록
+    1. 스파링 상대 찾기
